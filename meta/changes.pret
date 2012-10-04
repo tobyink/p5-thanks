@@ -8,5 +8,5 @@
 	issued  2012-10-04;
 	label   "Ten Four";
 	changeset [
-		item "Allow old-style Foo'Bar'Baz package names."^^Change;
+		item [ label "Allow old-style Foo'Bar'Baz package names."; dcs:thanks cpan:CORION ];
 	].
