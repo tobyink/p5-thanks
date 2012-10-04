@@ -4,12 +4,12 @@ use 5.006;
 
 BEGIN {
 	$thanks::AUTHORITY = 'cpan:TOBYINK';
-	$thanks::VERSION   = '0.001';	
+	$thanks::VERSION   = '0.002';
 }
 
 sub _module_notional_filename
 {
-	(my $name = shift) =~ s!::!/!g;
+	(my $name = shift) =~ s!(::|')!/!g;
 	return $name . q[.pm];
 }
 
@@ -19,7 +19,7 @@ sub unimport
 	my @caller = caller(0);
 	@_ = $caller[0] unless @_;
 	my $file = $caller[1];
-	foreach my $module (@_)
+	for my $module (@_)
 		{ $INC{ _module_notional_filename($module) } = $file }
 }
 
