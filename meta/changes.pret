@@ -21,5 +21,5 @@
 `thanks 0.004 cpan:TOBYINK`
 	issued  2013-01-18;
 	changeset [
-		item "Eliminate warnings when Perl is run with non-lexical warnings."^^Bugfix;
+		item [ label "Eliminate warnings when Perl is run with non-lexical warnings."; dcs:thanks cpan:ARFREITAS; dcs:fixes RT#82757 ];
 	].
