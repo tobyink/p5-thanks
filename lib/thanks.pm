@@ -1,12 +1,12 @@
 package thanks;
 
-"
-use 5.000;
-";
+$thanks::USELESS_VARIABLE = "
+use 5.005;
+" unless $thanks::USELESS_VARIABLE;
 
 BEGIN {
-	$thanks::AUTHORITY = 'cpan:TOBYINK';
-	$thanks::VERSION   = '0.003';
+	$thanks::AUTHORITY = 'cpan:TOBYINK' unless $thanks::AUTHORITY;
+	$thanks::VERSION   = '0.004'        unless $thanks::VERSION;
 }
 
 sub _module_notional_filename

@@ -10,3 +10,16 @@
 	changeset [
 		item [ label "Allow old-style Foo'Bar'Baz package names."; dcs:thanks cpan:CORION ];
 	].
+
+`thanks 0.003 cpan:TOBYINK`
+	issued  2012-10-25;
+	changeset [
+		item "Clarify purpose of the module."^^Documentation;
+		item "Reduce required Perl version."^^Packaging;
+	].
+
+`thanks 0.004 cpan:TOBYINK`
+	issued  2013-01-18;
+	changeset [
+		item "Eliminate warnings when Perl is run with non-lexical warnings."^^Bugfix;
+	].
