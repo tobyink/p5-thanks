@@ -8,7 +8,7 @@
 	:homepage             <https://metacpan.org/release/thanks>;
 	:download-page        <https://metacpan.org/release/thanks>;
 	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=thanks>;
-	:repository           [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-thanks> ];
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-thanks> ];
 	:created              2012-09-07;
 	:license              <http://dev.perl.org/licenses/>;
 	:maintainer           cpan:TOBYINK;
