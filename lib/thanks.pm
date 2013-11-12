@@ -31,7 +31,7 @@ __END__
 
 =head1 NAME
 
-thanks - no thanks, I don't want that module
+thanks - inline packages easily
 
 =head1 SYNOPSIS
 
@@ -40,6 +40,19 @@ thanks - no thanks, I don't want that module
 		no thanks;
 		# everything else goes here
 	};
+	
+	use My::Package;  # No error message about missing
+	                  # file "My/Package.pm".
+	                  #
+
+Or:
+
+	BEGIN {
+		package My::Package;
+		# everything else goes here
+	};
+	
+	no thanks qw( My::Package Another::Package Yet::Another::Package );
 	
 	use My::Package;  # No error message about missing
 	                  # file "My/Package.pm".
@@ -144,7 +157,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012-2013 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

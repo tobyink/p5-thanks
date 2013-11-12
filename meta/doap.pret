@@ -4,7 +4,7 @@
 
 `thanks`
 	:programming-language "Perl" ;
-	:shortdesc            "no thanks, I don't want that module";
+	:shortdesc            "inline packages easily";
 	:homepage             <https://metacpan.org/release/thanks>;
 	:download-page        <https://metacpan.org/release/thanks>;
 	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=thanks>;
