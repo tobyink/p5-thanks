@@ -29,4 +29,5 @@
 	changeset [
 		item "Further improvements to documentation."^^Documentation;
 		item "Change thanks.pm abstract."^^Packaging;
+		item "use Dist::Inkt"^^Packaging;
 	].

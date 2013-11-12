@@ -1,8 +1,4 @@
 # This file provides instructions for packaging.
 
-`thanks`
-	perl_version_from m`thanks`;
-	version_from      m`thanks`;
-	readme_from       m`thanks`;
-	test_requires     p`Test::More 0.61`  .
+`thanks` deps:test-requirement [ deps:on "Test::More 0.61"^^deps:CpanId ] .
 
