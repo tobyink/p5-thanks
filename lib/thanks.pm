@@ -6,7 +6,7 @@ use 5.005;
 
 BEGIN {
 	$thanks::AUTHORITY = 'cpan:TOBYINK' unless $thanks::AUTHORITY;
-	$thanks::VERSION   = '0.004'        unless $thanks::VERSION;
+	$thanks::VERSION   = '0.005'        unless $thanks::VERSION;
 }
 
 sub _module_notional_filename

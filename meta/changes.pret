@@ -23,3 +23,10 @@
 	changeset [
 		item [ label "Eliminate warnings when Perl is run with non-lexical warnings."; dcs:thanks cpan:ARFREITAS; dcs:fixes RT#82757 ];
 	].
+
+`thanks 0.005 cpan:TOBYINK`
+	issued  2013-11-12;
+	changeset [
+		item "Further improvements to documentation."^^Documentation;
+		item "Change thanks.pm abstract."^^Packaging;
+	].
