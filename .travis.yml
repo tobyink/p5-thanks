@@ -1,5 +1,7 @@
 language: perl
 script: HARNESS_IS_VERBOSE=1 prove -Ilib t
+install:
+  - perl -MTest::Harness -le'print $Test::Harness::VERSION'
 perl:
   - "5.18"
   - "5.16"
